@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="primary.css" />
+    <link rel="stylesheet" href="secondary.css" />
+    <link rel="stylesheet" href="tertiary.css" />
+    <link rel="stylesheet" href="quaternary.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button class="c-button-primary">
+      <p class="e-button-primary__span">primary</p>
+    </button>
+
+    <button class="c-button-secondary">
+      <p class="e-button-secondary__span">secondary</p>
+    </button>
+
+    <button class="c-button-tertiary">
+      <p class="e-button-tertiary__span">tertiary</p>
+    </button>
+
+    <button class="c-button-quaternary">
+      <p class="e-button-quaternary__span">tertiary</p>
+    </button>
+  </body>
+
+  <style>
+    body {
+      display: flex;
+      place-items: center;
+      place-content: center;
+      flex-flow: column;
+      min-height: 100vh;
+      position: relative;
+      background: linear-gradient(rgb(55, 55, 55), rgb(0, 0, 0));
+    }
+
+    .c-button-secondary,
+    .c-button-tertiary,
+    .c-button-quaternary {
+      margin-top: 2rem;
+    }
+  </style>
+</html>

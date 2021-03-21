@@ -1,0 +1,45 @@
+@keyframes point {
+  to {
+    border-radius: 0%;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.c-button-tertiary {
+  width: 14rem;
+  height: 3.5rem;
+  border: none;
+  background: rgb(228, 42, 123);
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 1rem;
+  clip-path: inset(0 0 0 0 round 4px);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-button-tertiary:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: rgb(230, 53, 130);
+}
+
+.c-button-tertiary:hover::after {
+  position: absolute;
+  animation: point 0.6s ease forwards;
+}
+
+.e-button-tertiary__span {
+  position: absolute;
+  z-index: 2;
+}

@@ -1,0 +1,39 @@
+.c-button-primary {
+  width: 14rem;
+  height: 3.5rem;
+  border: 0;
+  background: #111;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+  clip-path: inset(0 0 0 0 round 4px);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-button-primary::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  right: 0;
+  background: #23272a;
+  transition: width 0.3s, background 0.3s ease-in-out;
+  clip-path: inherit;
+}
+
+.c-button-primary:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.e-button-primary__span {
+  position: absolute;
+  text-align: center;
+}
