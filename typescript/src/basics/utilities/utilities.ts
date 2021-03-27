@@ -19,7 +19,12 @@ console.log(todo);
 
 /* Partial: torna as propriedades de Todo opcionais, mas apenas para o paramêtro */
 function updateTodo(todo: Todo, fields: Partial<Todo>) {
-  return { ...todo,  ...fields}
+  const { complet, title } = { ...fields }
+  return {
+    ...todo,
+    title,
+    complet
+  }
 }
 const newTodo = updateTodo(todo, { complet: true })
 console.log(newTodo);
