@@ -11,6 +11,10 @@ let numsToString = (nums: number): string[] => [...nums.toString()];
  */
 let reduceAndSum = (acc: number, num: string) => acc + parseInt(num);
 
+/**
+ * @param n | input value
+ * @returns 
+ */
 let digital_root = (n: number) => {
   const sum = numsToString(n).reduce(reduceAndSum, 0);
   return !(sum > 9) ? sum : digital_root(sum);
@@ -20,7 +24,7 @@ digital_root(16) // 7
 digital_root(456) // 6
 digital_root(942) // 6
 digital_root(132189) // 6
-digital_root(493193) // 2a
+digital_root(493193) // 2
 
 /**
     16  -->  1 + 6 = 7

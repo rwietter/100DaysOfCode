@@ -45,7 +45,19 @@
 <br />
 <br />
 
+## Books
+- [C Programming Language, Kernighan Brian W.; Ritchie Dennis](https://www.amazon.com.br/dp/B009ZUZ9FW/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+
+<br />
+<br />
+
 ## Articles & Study
+
+- <strong> Teach Yourself Computer Science </strong>
+  - [Teach Yourself Computer Science - CS education](https://teachyourselfcs.com/)
+
+- <strong> A Guide to Parsing: Algorithms and Terminology </strong>
+  - [A Guide to Parsing: Algorithms and Terminology](https://tomassetti.me/guide-parsing-algorithms-terminology/)
 
 - <strong> Longest Common Subsequence </strong>
   - [Longest Common Subsequence - Git Diff](https://gabrielschade.github.io/2019/01/07/algoritmo-LCS.html)
