@@ -1,4 +1,0 @@
-```javascript
-// email mask
-/(.+)@(.+)/
-```

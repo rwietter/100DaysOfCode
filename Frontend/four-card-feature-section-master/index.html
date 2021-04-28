@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+</head>
+<body>
+
+<div class="title-description-top py-8">
+    <h1 class="title self-auto flex-1 text-center tracking-normal">Reliable, efficient delivery</h1>
+    <h1 class="sub-title self-auto flex-1 text-center m-2">Powered by Technology</h1>
+    <div class="description-top m-5">
+      <h4 class="description-title self-auto flex-1 text-center">
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </h4>
+    </div>
+
+    <div class="cards-container">
+      <div class="max-w-md rounded overflow-hidden shadow-lg m-5" >
+        <div class="px-5 py-4 border-solid border-t-4 border-blue-400">
+        <div class="sans mb-2 title-card">Supervisor</div>
+          <p class="sans-light description-card">
+            Monitors activity to identify project roadblocks
+          </p>
+        </div>
+        <icon class="fa fa-atom icon"/>
+      </div>
+
+    <div class="card-center mt-3">
+      <div class="max-w-md rounded overflow-hidden shadow-lg  m-5" >
+        <div class="px-5 py-4 border-solid border-t-4 border-yellow-400">
+        <div class="sans mb-2 title-card">Team Builder</div>
+          <p class="sans-light description-card">
+            Scans our talent network to create the optimal team for your project
+          </p>
+        </div>
+        <icon class="fa fa-dragon icon"/>
+      </div>
+
+        <div class="line-height-center-container"></div>
+
+        <div class="max-w-md rounded overflow-hidden shadow-lg m-5" >
+          <div class="px-5 py-4 border-solid border-t-4 border-yellow-400">
+          <div class="sans mb-2 title-card">Karma</div>
+            <p class="sans-light description-card">
+              Regularly evaluates our talent to ensure quality
+            </p>
+          </div>
+          <icon class="fa fa-check icon"/>
+        </div>
+      </div>
+
+      <div class="max-w-md rounded overflow-hidden shadow-lg m-5" >
+       <div class="px-5 py-4 border-solid border-t-4 border-yellow-600">
+        <div class="sans mb-2 title-card">Calculator</div>
+          <p class="sans-light description-card">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+        </div>
+      <icon class="fa fa-bug icon"/>
+    </div>
+  </div>
+</div>
+<script src='./tailwind.js'></script>
+</body>
+</html>

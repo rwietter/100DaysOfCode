@@ -1,3 +1,3 @@
-let reaction = 'yikes';
+const reaction = 'yikes';
 reaction[0] = 'l';
 console.log(reaction);

@@ -1,8 +1,8 @@
 const api = () => {
   axios
-    .get("https://api.github.com/users/euiciowr")
-    .then(function(response) {})
-    .catch(function(error) {});
+    .get('https://api.github.com/users/euiciowr')
+    .then((response) => {})
+    .catch((error) => {});
 };
 
 api();
