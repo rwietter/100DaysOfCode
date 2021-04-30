@@ -72,3 +72,4 @@ yarn-error.log
 yarn.lock
 
 now.json
+algorithms/codewars/bitCounting.ts
