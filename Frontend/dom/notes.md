@@ -1,1 +1,0 @@
-- Recomenda-se prefixar os nomes desses atributos inventados data- para garantir que não entrem em conflito com nenhum outro atributo.
