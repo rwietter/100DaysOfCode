@@ -1,0 +1,243 @@
+/* --- CSS STYLE --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&display=swap");
+*, *::after, *::before, body, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+/* mixins */
+/* body code */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: #222222;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+/* top background white */
+.top-background {
+  background: white;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  top: 0;
+  position: absolute;
+  height: 50%;
+  overflow: hidden;
+}
+
+/* botton background */
+.bottom-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 50%;
+  max-height: 100%;
+  overflow-x: hidden;
+  bottom: 0;
+  position: absolute;
+  background: #222222;
+}
+
+/* container form */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column wrap;
+  z-index: 6;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 6px;
+  width: 40vw;
+  max-width: 30rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: white;
+  -webkit-box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+@media screen and (min-width: 206px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* title */
+.title-container {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: clamp(16px, 3vw, 2rem);
+  font-weight: 700;
+  color: #3f3f3f;
+  padding: 0 0 1rem 0;
+}
+
+/* label title peso and altura */
+.label-container, .button-container {
+  text-align: center;
+  width: 100%;
+  font-size: clamp(12px, 3vw, 16px);
+  line-height: 2;
+  font-family: "Montserrat";
+  color: #3f3f3f;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+/* Input float with icon */
+.flex-icon-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.flex-icon-input span {
+  position: absolute;
+  padding: 18px;
+  font-size: clamp(0.4em, 4vw, 0.8em);
+  color: #3f3f3f;
+}
+
+/* input weight and height */
+.inpt-container {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-family: "Montserrat";
+  font-size: clamp(0.75rem, 0.5vw, 0.8rem);
+  outline: none;
+  border-style: none;
+  background: #e4ecf3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.inpt-container:placeholder-shown {
+  outline: none;
+  font-weight: 200;
+  font-size: clamp(0.1rem, 4vw, 0.9rem);
+}
+
+.inpt-container.is-shadow:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(220, 230, 240, 0.7);
+          box-shadow: 0 0 0 3px rgba(220, 230, 240, 0.7);
+}
+
+/* button submit */
+.button-container {
+  border: none;
+  background: #222222;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: clamp(12px, 3vw, 1.2rem);
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s;
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.button-container:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0em 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-container.is-shadow:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.3);
+          box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.3);
+}
+
+.altura:invalid, .peso:invalid {
+  border: #d23669 solid 3px;
+}
+
+/* result calc */
+.successful-result {
+  background: #5A3DBB;
+  color: white;
+  padding: 10px 20px;
+  font-size: clamp(12px, 3vw, 1rem);
+  font-weight: 400;
+  font-family: "Montserrat";
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  -webkit-box-shadow: 0px 0px 6px -1px rgba(51, 51, 51, 0.86);
+  box-shadow: 0px 0px 6px -1px rgba(51, 51, 51, 0.86);
+}
+
+/* bad error */
+.bad {
+  background: #d23669;
+  color: white;
+  padding: 10px 20px;
+  font-size: clamp(12px, 3vw, 1rem);
+  font-weight: 400;
+  font-family: "Montserrat";
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+  -webkit-box-shadow: 0px 0px 6px -1px rgba(51, 51, 51, 0.86);
+  box-shadow: 0px 0px 6px -1px rgba(51, 51, 51, 0.86);
+}
+
+/* separator title of form */
+.rounded-separator {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 100%;
+  opacity: 30%;
+}
+
+form {
+  padding-top: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

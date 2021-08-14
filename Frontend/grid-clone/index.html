@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2929/2929040.svg" />
+    <meta name="Description" content="Clone de site para aplicar o estudo de css grid" />
+    <meta name="keywords" content="css grid" />
+    <link rel="stylesheet" href="./src/styles/styles.min.css" />
+    <title>CSS Grid Clone</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div>
+          <img width="50" src="./public/logo.png" alt="logo" />
+          <strong>wrote a book</strong>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Freelance</a>
+          <a href="#">CSS Book</a>
+          <a href="#">Bulma Book</a>
+          <a href="#">Teaching</a>
+          <a href="#">Contact</a>
+          <a class="twitter" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="0" viewbox="0 0 1792 1792">
+              <path
+                d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+              />
+            </svg>
+          </a>
+          <a class="github" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="0" viewbox="0 0 1792 1792">
+              <path
+                d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="card-buy-now">
+          <h1 class="title">CSS in 44 minutes</h1>
+          <p class="sub-title">
+            A small <a href="#">&nbsp;ebook&nbsp;</a> written by &nbsp;<img
+              width="15"
+              height="15"
+              src="./public/logo.png"
+              alt="logo"
+            />
+            <span>&nbsp;@</span>jgthms
+          </p>
+          <span class="border"></span>
+          <p class="learn">Learn how to build your own webpage from scratch with my step by step guide</p>
+          <section class="buybook">
+            <img src="./public/html.svg" width="50" height="50" alt="" />
+            <img src="./public/css.svg" width="50" height="50" alt="" />
+            <img src="./public/js.svg" width="40" height="40" alt="" />
+            <section class="button">
+              <button>Buy now</button>
+              <button>Get free sample</button>
+            </section>
+          </section>
+        </section>
+
+        <section class="right-video">
+          <img src="./public/build-this.png" alt="learn how to build this" />
+          <video autoplay loop muted preload="auto" poster="./public/step-05@2x.jpg" src="./public/video.mp4"></video>
+        </section>
+
+        <div class="container-continents">
+          <section class="continents">
+            <a href="#">
+              <span>😲</span>
+              Already sold
+              <strong>5000+ times</strong>
+              in
+              <span>
+                <strong>78</strong>
+                countries
+              </span>
+              across
+              <span>
+                <strong>6</strong>
+                continents!🌍
+              </span>
+            </a>
+          </section>
+        </div>
+
+        <section class="feedback-container">
+          <section class="feedback-item">
+            <h1><strong>Thank you so very much</strong> for writing this book, I am loving it!</h1>
+            <p>CSS has been my weak spot, and I am determined to <strong>develop my skills</strong> in this area.</p>
+            <p>
+              Your book has already <strong>blown my mind</strong> in multiple categories that I thought I had
+              previously understood regarding CSS.
+            </p>
+            <p><strong class="name">Rhett Trom</strong>, a happy reader</p>
+          </section>
+          <section class="feedback-item">
+            <h1><strong>Great course,</strong> first time building a page with CSS and JavaScript together!</h1>
+            <p>
+              Instructions were pretty <strong>easy to follow</strong>, and Jeremy was
+              <strong>quick to respond</strong> regarding a question I had with loading JS.
+            </p>
+            <p><strong class="name second-name">Karen Bellamy</strong>, a beginner in frontend development</p>
+          </section>
+        </section>
+
+        <section class="step-container">
+          <hr class="hr-top" />
+          <section class="step">
+            <h2>
+              <span>
+                Learn
+                <strong>
+                  step by step
+                </strong>
+              </span>
+            </h2>
+            <figure class="step-images">
+              <img src="./public/step-01@2x.jpg" alt="step 1" />
+              <img src="./public/step-02@2x.jpg" alt="step 2" />
+              <img src="./public/step-03@2x.jpg" alt="step 3" />
+              <img src="./public/step-04@2x.jpg" alt="step 4" />
+              <img src="./public/step-05@2x.jpg" alt="step 5" />
+            </figure>
+          </section>
+          <hr class="hr-bottom" />
+        </section>
+
+        <section class="sumary">
+          <sumary class="learn">
+            <h2>
+              <span>What you will learn </span>
+            </h2>
+            <ul>
+              <li name="primary">Set up a valid <strong>HTML5</strong> document</li>
+              <li name="primary">Write <strong>semantic</strong> markup</li>
+              <li name="primary">Insert responsive <strong>Retina-ready</strong> images</li>
+              <li name="secondary">Design a <strong>100% responsive</strong> page</li>
+              <li name="secondary">Understand how <strong>media queries</strong> work</li>
+              <li name="secondary">Use <strong>CSS Flexbox</strong> to lay out your components</li>
+              <li name="secondary">Add visual feedback with CSS <strong>Transitions</strong></li>
+              <li name="secondary">Bring your page to life with CSS <strong>Animations</strong></li>
+              <li name="third">Make use of <strong>Google Fonts</strong></li>
+              <li name="third">Include and style <strong>Font Awesome 5</strong> icons</li>
+            </ul>
+          </sumary>
+          <sumary class="included">
+            <h2><span>What's included</span></h2>
+            <aside>
+              <img name="first" src="./public/icons8-ebook-100.png" alt="ebook" />
+              <div>
+                <h3>44 pages eBook</h3>
+                <p>In pdf format</p>
+              </div>
+            </aside>
+            <aside>
+              <img name="second" src="./public/icons8-picture-100.png" alt="picture" />
+              <div>
+                <h3>Responsive-ready images</h3>
+                <p>To display the optimal image for each device</p>
+              </div>
+            </aside>
+            <aside>
+              <img src="./public/icons8-rules-100.png" alt="rules" />
+              <div>
+                <h3>6 CSS best practices</h3>
+                <p>The best practices I've acquired over a decade</p>
+              </div>
+            </aside>
+            <section class="deluxe-container">
+              <span>Deluxe edition</span>
+              <aside>
+                <img src="./public/icons8-code-file-100.png" alt="code file" />
+                <div>
+                  <h3>Full source code</h3>
+                  <p>So you can play with the final result instantly</p>
+                </div>
+              </aside>
+              <hr class="deluxe-separator" />
+              <aside>
+                <img src="./public/icons8-diversity-100.png" alt="diversity" />
+                <div>
+                  <h3>4 design variations</h3>
+                  <p>See how you can set your own style</p>
+                </div>
+              </aside>
+            </section>
+          </sumary>
+          <hr class="sumary-last-separator" />
+        </section>
+
+        <section class="quotes-container">
+          <section class="quotes-item-1">
+            <h2>CSS in 44 minutes gave me <strong>everything I need</strong> to get started on the front end.</h2>
+            <p>
+              I have worked as a <strong>backend developer</strong> for 5 years. When I first started coding, any kind
+              of frontend work <strong>felt like a mess</strong>, so I always avoided it.
+            </p>
+            <p><strong class="name">Jonathan Meier</strong>, a backend developer going fullstack</p>
+          </section>
+          <section class="quotes-item-2">
+            <p>That is, until I stumbled on CSS in 44 minutes.</p>
+            <p>
+              A <strong>concise</strong>, <strong>simple</strong> and <strong>appropriately opinionated</strong> guide,
+              I strongly recommend reading this book.
+            </p>
+          </section>
+        </section>
+
+        <section focused class="book-container">
+          <img src="./public/printed-21479314ada83c9d12dbee6556ade50e.png" alt="" />
+          <img src="./public/css-in-44-minutes-book-cover.png" alt="" />
+          <div>
+            <hr class="separator" />
+          </div>
+        </section>
+
+        <section class="price-container">
+          <section class="payment-regular">
+            <h2 class="title"><strong>Regular</strong><span> $15</span></h2>
+            <div class="regular-card">
+              <aside class="payment-item">
+                <img src="./public/icons8-ebook-100.png" alt="code icon" />
+                <p><strong>Ebook </strong>44 pages pdf</p>
+              </aside>
+              <div class="regular-card-separator">
+                <hr />
+              </div>
+              <aside class="payment-item">
+                <img src="./public/icons8-picture-100.png" alt="picture icon" />
+                <p><strong>Assets</strong> 5 images + 1 CSS reset</p>
+              </aside>
+              <div class="payment-botton">
+                <button>Buy now</button>
+              </div>
+            </div>
+            <aside class="credit-card">
+              <img src="./public/payment-methods.png" alt="payment method" />
+              <img src="./public/gumroad.png" alt="gumroad" />
+            </aside>
+          </section>
+          <section class="payment-deluxe">
+            <h2><strong>Deluxe</strong> $20</h2>
+            <section class="deluxe-card">
+              <aside class="deluxe-card-item">
+                <img src="./public/icons8-ebook-100.png" alt="book icon" />
+                <p><strong>Ebook</strong> 44 pages pdf</p>
+              </aside>
+              <aside class="deluxe-card-item">
+                <img src="./public/icons8-picture-100.png" alt="picture icon" />
+                <p><strong>Assets</strong> 25 images + 5 HTML files + 7 CSS files + 1 JS file</p>
+              </aside>
+              <aside class="deluxe-card-item">
+                <img src="./public/icons8-code-file-100.png" alt="code file icon" />
+                <p><strong>Source code</strong> HTML + CSS + JS</p>
+              </aside>
+              <aside class="deluxe-card-item">
+                <img src="./public/icons8-diversity-100.png" alt="diversity icon" />
+                <p><strong>4 variations</strong> with their HTML and CSS</p>
+              </aside>
+              <div class="deluxe-galery">
+                <img src="./public/julia-thumbnail@2x.jpg" alt="julia thumbnail" />
+                <img src="./public/leon-thumbnail@2x.jpg" alt="leon thumbnail" />
+                <img src="./public/oliver-thumbnail@2x.jpg" alt="oliver thumbnail" />
+                <img src="./public/sam-thumbnail@2x.jpg" alt="sam thumbnail" />
+              </div>
+            </section>
+            <div class="payment-botton">
+              <button>Buy now</button>
+            </div>
+          </section>
+        </section>
+
+        <div class="copyright">
+          <p>Copyright © 2018 – Jeremy Thomas</p>
+          <p>Images by <a>Unsplash</a> – Icons by <a>Icons8</a></p>
+          <hr class="copyright-separator" />
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="title-footer">
+          <span><a href="">Share this page </a></span>
+        </p>
+        <figure>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewbox="0 0 1792 1792">
+            <path
+              d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewbox="0 0 1792 1792">
+            <path
+              d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"
+            />
+          </svg>
+        </figure>
+        <nav>
+          <a href="#">Home</a>
+          <span>•</span>
+          <a href="#">Twitter</a>
+          <span>•</span>
+          <a href="#">GitHub</a>
+          <span>•</span>
+          <a href="#">Contact</a>
+        </nav>
+        <p class="copyright-footer">Copyright © 2020 JGTHMS Ltd (12588054) registered in England and Wales.</p>
+        <address class="address">
+          <p>
+            Registered Office Address: First Floor, Telecom House, 125-135 Preston Road, Brighton, East Sussex, United
+            Kingdom, BN1 6AF
+          </p>
+        </address>
+        <div class="footer-figure">
+          <img src="./public/made-with-bulma.png" alt="made with bulma" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="30">
+            <path
+              class="dark-path"
+              d="M62.9 12h2.8v10h-2.8v-1.3c-1 1.5-2.3 1.6-3.1 1.6-3.1 0-5.1-2.4-5.1-5.3 0-3 2-5.3 4.9-5.3.8 0 2.3.1 3.2 1.6V12zm-5.2 5c0 1.6 1.1 2.8 2.8 2.8 1.6 0 2.8-1.2 2.8-2.8 0-1.6-1.1-2.8-2.8-2.8-1.6 0-2.8 1.2-2.8 2.8zm13.5-2.6V22h-2.8v-7.6h-1.1V12h1.1V8.6h2.8V12h1.9v2.4h-1.9zm8.5 0c-.7-.6-1.3-.7-1.6-.7-.7 0-1.1.3-1.1.8 0 .3.1.6.9.9l.7.2c.8.3 2 .6 2.5 1.4.3.4.5 1 .5 1.7 0 .9-.3 1.8-1.1 2.5s-1.8 1.1-3 1.1c-2.1 0-3.2-1-3.9-1.7l1.5-1.7c.6.6 1.4 1.2 2.2 1.2.8 0 1.4-.4 1.4-1.1 0-.6-.5-.9-.9-1l-.6-.2c-.7-.3-1.5-.6-2.1-1.2-.5-.5-.8-1.1-.8-1.9 0-1 .5-1.8 1-2.3.8-.6 1.8-.7 2.6-.7.7 0 1.9.1 3.2 1.1l-1.4 1.6zm6.1-1.1c1-1.4 2.4-1.6 3.2-1.6 2.9 0 4.9 2.3 4.9 5.3s-2 5.3-5 5.3c-.6 0-2.1-.1-3.2-1.6V22H83V5.2h2.8v8.1zm-.3 3.7c0 1.6 1.1 2.8 2.8 2.8 1.6 0 2.8-1.2 2.8-2.8 0-1.6-1.1-2.8-2.8-2.8-1.7 0-2.8 1.2-2.8 2.8zm13 3.5L93.7 12H97l3.1 5.7 2.8-5.7h3.2l-8 15.3h-3.2l3.6-6.8zM54 13.7h-7v2.8h3.7c-.6 1.9-2 3.2-4.6 3.2-2.9 0-5-2.4-5-5.3S43.1 9 46 9c1.6 0 3.2.8 4.2 2.1l2.3-1.5C51 7.5 48.6 6.3 46 6.3c-4.4 0-8 3.6-8 8.1s3.4 8.1 8 8.1 8-3.6 8-8.1c.1-.3 0-.5 0-.7z"
+            />
+            <path
+              d="M25 14h-7v2h4.8c-.7 3-2.9 5.5-5.8 6.5L5.5 11c1.2-3.5 4.6-6 8.5-6 3 0 5.7 1.5 7.4 3.8l1.5-1.3C20.9 4.8 17.7 3 14 3 8.8 3 4.4 6.7 3.3 11.6l13.2 13.2C21.3 23.6 25 19.2 25 14zm-22 .1c0 2.8 1.1 5.5 3.2 7.6 2.1 2.1 4.9 3.2 7.6 3.2L3 14.1z"
+              fill="#fff"
+            />
+            <path
+              d="M14 0C6.3 0 0 6.3 0 14s6.3 14 14 14 14-6.3 14-14S21.7 0 14 0zM6.2 21.8C4.1 19.7 3 16.9 3 14.2L13.9 25c-2.8-.1-5.6-1.1-7.7-3.2zm10.2 2.9L3.3 11.6C4.4 6.7 8.8 3 14 3c3.7 0 6.9 1.8 8.9 4.5l-1.5 1.3C19.7 6.5 17 5 14 5c-3.9 0-7.2 2.5-8.5 6L17 22.5c2.9-1 5.1-3.5 5.8-6.5H18v-2h7c0 5.2-3.7 9.6-8.6 10.7z"
+              fill="#639"
+            />
+          </svg>
+        </div>
+      </footer>
+    </div>
+    <script defer type="text/JavaScript" src="./src/scripts/statusbar.js"></script>
+  </body>
+</html>

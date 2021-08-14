@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+  </div>
+  <script>
+    const body = document.querySelector('div');
+    console.log(body);
+    console.log(`body.firstChild: ${body.firstChild}`);
+    console.log(`body.lastChild: ${body.lastChild}`);
+    console.log(`body.lastElementChild: ${body.lastElementChild}`);
+    console.log(`body.previousSibling: ${body.previousSibling}`);
+    console.log(`body.nextSibling: ${body.nextSibling}`);
+    console.log(`body.children: ${body.children}`);
+    console.log(`body.childNodes: ${body.childNodes}`);
+    /* Para adicionar um nó filho a um nó de elemento, podemos usar appendChild, que o coloca no final da lista de filhos, ou insertBefore, que insere o nó fornecido como primeiro argumento antes do nó fornecido como segundo argumento. */
+    const p = document.createElement('p');
+    p.innerText = 'This is a span from appendChild';
+    body.appendChild(p);
+
+    /* Um nó pode existir no documento em apenas um lugar. Portanto, inserir o parágrafo Três na frente do parágrafo Um irá primeiro removê-lo do final do documento e, em seguida, inseri-lo na frente */
+    let link = body.querySelectorAll('p');
+    body.insertBefore(link[2], link[0]);
+
+    // replace child
+    let container = document.createElement('div');
+    let section = document.createElement('section');
+    let span = document.createElement('span');
+    section.innerText = '<div>This section</div>';
+    span.innerText = '<div>This span</div>';
+    body.appendChild(container);
+    container.appendChild(section);
+    container.appendChild(span);
+    container.replaceChild(section, span) // section/span => span/section
+
+    // setAttribute
+    const a = document.createElement('a');
+    a.innerText = 'google.com.br';
+    container.appendChild(a);
+    a.setAttribute('href', 'https://google.com.br/');
+
+    // getAttribute
+    const href = a.getAttribute('href');
+    console.log(`href="${href}"`);
+
+    // get Width and Height length
+    const width = body.offsetWidth;
+    const height = body.offsetHeight;
+    const left = body.offsetLeft;
+    const upTop = body.offsetTop;
+    body.style.height = '1600vh';
+    console.log(`width: ${width}`);
+    console.log(`height: ${height}`);
+    console.log(`left: ${left}`);
+    console.log(`upTop: ${upTop}`);
+
+    // Client Width and Heght => ignorando a largura da borda
+    const clientWidth = body.clientWidth;
+    const clientHeight = body.clientHeight;
+    console.log(`clientWidth: ${clientWidth}`);
+    console.log(`clientHeight: ${clientHeight}`);
+
+    // Array positions
+    const boxPosition = body.getBoundingClientRect();
+    console.log(`\nboxPosition.top: ${boxPosition.top.toFixed(2)}`);
+    console.log(`boxPosition.bottom: ${boxPosition.bottom.toFixed(2)}`);
+    console.log(`boxPosition.left: ${boxPosition.left.toFixed(2)}`);
+    console.log(`boxPosition.right: ${boxPosition.right.toFixed(2)}`);
+    
+    // X-Y=AXIS loaded
+    const pageX = window.pageXOffset;
+    const pageY = window.pageYOffset;
+    console.log(`\npageXOffset: ${pageX}`);
+    console.log(`pageYOffset: ${pageY}`);
+  </script>
+</body>
+</html>

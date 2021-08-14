@@ -1,0 +1,193 @@
+/* --- CSS STYLE --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&display=swap');
+*,
+*::after,
+*::before,
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+/* mixins */
+/* body code */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: #222222;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* top background white */
+.top-background {
+  background: white;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  height: 50%;
+}
+
+/* container form */
+.container {
+  width: 1200px;
+  max-width: 30rem;
+  min-width: 25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header';
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column wrap;
+  padding: 3rem;
+  position: absolute;
+  border-radius: 6px;
+  margin: 0 10px;
+  background: white;
+  -webkit-box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* title */
+.title-container {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: clamp(1.2rem, 1rem + 1vw, 3rem);
+  font-weight: 700;
+  color: #3f3f3f;
+  padding: 0 0 1rem 0;
+}
+
+/* label title peso and altura */
+.label-container,
+.button-container {
+  text-align: center;
+  width: 100%;
+  font-size: clamp(0.75rem, 1rem + 1vw, 1rem);
+  line-height: 2;
+  font-family: 'Montserrat';
+  color: #3f3f3f;
+  font-weight: 400;
+  margin-bottom: 1vh;
+}
+
+/* Input float with icon */
+.flex-icon-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.flex-icon-input span {
+  position: absolute;
+  padding: 18px;
+  font-size: clamp(0.75rem, 1rem + 1vw, 1rem);
+  color: #3f3f3f;
+}
+
+/* input weight and height */
+.inpt-container {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-family: 'Montserrat';
+  font-size: clamp(0.5rem, 1rem + 1vw, 0.8rem);
+  outline: none;
+  border-style: none;
+  background: #e4ecf3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.inpt-container:placeholder-shown {
+  outline: none;
+  font-weight: 200;
+  font-size: clamp(0.5rem, 1rem + 1vw, 0.8rem);
+}
+
+/* button submit */
+.button-container {
+  border: none;
+  background: #222222;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.5s;
+}
+
+.button-container:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0em 20px rgba(0, 0, 0, 0.3);
+}
+
+.altura:invalid,
+.peso:invalid {
+  border: #d23669 solid 3px;
+}
+
+/* result calc */
+.successful-result {
+  background: #5a3dbb;
+  color: white;
+  padding: 10px 20px;
+  font-size: clamp(0.8rem, 1rem + 1vw, 1rem);
+  font-weight: 400;
+  font-family: 'Montserrat';
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+}
+
+/* bad error */
+.bad {
+  background: #d23669;
+  color: white;
+  padding: 10px 20px;
+  font-size: clamp(0.5rem, 1rem + 1vw, 1rem);
+  font-weight: 400;
+  font-family: 'Montserrat';
+  border-radius: 6px;
+  margin: 0.5rem 0 0 0;
+}
+
+/* separator title of form */
+.rounded-separator {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 100%;
+  opacity: 30%;
+}
+
+form {
+  margin-top: 1rem;
+}

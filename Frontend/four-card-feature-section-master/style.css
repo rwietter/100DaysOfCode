@@ -1,0 +1,265 @@
+@import url('https:/*fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  background: hsl(0, 0%, 98%);
+  font-family: 'Poppins';
+}
+
+.title-description-top {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.title {
+  color: hsl(0, 0%, 35%);
+  font-size: 20px;
+  line-height: 1.3em;
+  font-family: 'Raleway', sans-serif;
+}
+.sub-title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+.description-top{
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+.description-title{
+  color: hsl(0, 0%, 35%);
+  font-size: 12px;
+}
+.supervisor {
+  border-top: 2rem;
+  border-color: hsl(212, 86%, 64%);
+}
+.sans {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
+  font-size: 20px;
+}
+.rounded{
+  min-width: 20em;
+  max-width: 20em;
+  max-width: 12em;
+}
+.sans-light {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  color:  hsl(234, 12%, 34%);
+}
+.icon {
+  float: right;
+  align-self: flex-end;
+  padding: 15px;
+}
+.cards-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-card {
+  margin-bottom: 1.5em;
+}
+.description-card {
+  line-height: 1.5em;
+  font-size: 2.5vh;
+}
+.line-height-center-container {
+  padding: .1em;
+}
+
+/* LARGURA MÍNIMA */
+
+@media (min-width: 435px) { 
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  .rounded{
+    min-width: 15em;
+    max-width: 35em;
+  }
+  .description-title{
+    font-size: 22px;
+  }
+  .icon {
+    font-size: 2em;
+    padding: 1em;
+  }
+  .sans-light {
+    font-size: 25px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 35px;
+  }
+  .title-card {
+    font-size: 2.7em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .rounded{
+    min-width: 30em;
+    max-width: 15em;
+  }
+  .icon {
+    font-size: 3em;
+    padding: 1em;
+  }
+  .sans-light {
+    font-size: 25px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+  .title-card {
+    font-size: 2.7em;
+  }
+  .description-title{
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) { 
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  .rounded{
+    min-width: 30em;
+    max-width: 40em;
+    min-height: 15em;
+  }
+  .icon {
+    font-size: 3em;
+    padding: 1em;
+  }
+  .sans-light {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+  .description-title{
+    font-size: 25px;
+  }
+  .title-card {
+    font-size: 2.7em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .rounded{
+    min-width: 10em;
+    max-width: 20em;
+    min-height: 10em;
+    max-height: 12em;
+  }
+  .cards-container {
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  .sans-light {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .sub-title {
+    font-size: 22px;
+  }
+  .description-title{
+    font-size: 15px;
+  }
+  .title-card {
+    font-size: 22px;
+  }
+  .icon {
+    font-size: 20px;
+    padding: 1em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* LARGURA MÁXIMA */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
